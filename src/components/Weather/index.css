@@ -1,0 +1,14 @@
+.weather {
+  display: grid;
+  width: 100%;
+}
+
+.weather-hourly {
+  display: flex; 
+}
+
+@media (min-width: 425px) {
+  /* .weather {
+    padding: 8px;
+  } */
+}

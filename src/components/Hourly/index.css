@@ -1,0 +1,64 @@
+.hourly-date {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  margin: 4px 0;
+}
+
+.hourly-title {
+  display: inline-block;
+  border-bottom: 1px #ececec7c solid;
+  width: 100%;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hourly-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2268b893;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.hourly-item > span {
+  margin: 8px 0;
+}
+
+.hourly-item-date {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.hourly-item > span:nth-child(2) {
+  font-size: 12px;
+}
+
+@media (min-width: 375px) {
+  .hourly-item > span:nth-child(2) {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hourly-title {
+    font-size: 38px;
+  }
+
+  .hourly-item {
+    height: 120px;
+    justify-content: space-evenly;
+  }
+
+  .hourly-item-date {
+    font-size: 30px;
+  }
+
+  .hourly-item > span:nth-child(2) {
+    font-size: 22px;
+  }
+}

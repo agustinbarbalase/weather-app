@@ -1,0 +1,43 @@
+.daily {
+  margin-top: 10px;
+}
+
+.daily-data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.daily-title {
+  display: inline-block;
+  border-bottom: 1px #ececec7c solid;
+  width: 100%;
+  padding: 8px 0;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.daily-data > span {
+  padding: 8px 4px;
+  text-align: center;
+}
+
+.daily-header {
+  border-bottom: 1px solid #ececec7c;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .daily-title {
+    font-size: 38px;
+  }
+
+  .daily-header {
+    font-size: 30px;
+  }
+
+  .daily-data > span:nth-child(n + 4) {
+    font-size: 24px;
+  }
+}

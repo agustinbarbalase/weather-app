@@ -1,0 +1,26 @@
+.current-location {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 8px 0;
+}
+
+.current-info {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .current {
+    padding: 20px 8px;
+  }
+  
+  .current-info {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .current-location {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+}

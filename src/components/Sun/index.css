@@ -1,0 +1,33 @@
+.sun {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin: 10px 0;
+}
+
+.sun > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun > div > span {
+  margin: 2px 0;
+}
+
+.sun > div > span:nth-child(1) {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .sun {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .sun > div > span:nth-child(1) {
+    font-size: 28px;
+  }
+}
